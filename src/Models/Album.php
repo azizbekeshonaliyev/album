@@ -51,7 +51,7 @@ class Album extends Model
     }
 
     public function addImage($image){
-        Image::store($image,null,$this);
+         Image::store($image,null,$this);
     }
 
     public function removeImage($id)
