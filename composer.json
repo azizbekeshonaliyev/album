@@ -1,0 +1,13 @@
+{
+    "name": "bek96/album",
+    "description": "Laravelda tuzilgan web saytlar uchun Album obekti.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "azizbekeshonaliyev",
+            "email": "1996azizbekeshonaliyev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
