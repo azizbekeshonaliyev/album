@@ -12,6 +12,10 @@ Konfiguratsiya fayylarini ko'chirish uchun ushbu commandani ishga tushiring.
 
     php artisan vendor:publish --provider="Bek96\Album\AlbumServiceProvider"
 
+Album va Image modellari jadvallarini migratsiya qiling.
+
+    php artisan migrate
+
 ## Foydalanish.
    
     <?php
