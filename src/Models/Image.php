@@ -22,7 +22,7 @@ class Image extends \Illuminate\Database\Eloquent\Model
     /**
      *
      */
-    const IMAGE_RESOURCE = "bek96/album/images/";
+    const IMAGE_RESOURCE = "vendor/bek96/album/images/";
 
     /**
      * @var array
