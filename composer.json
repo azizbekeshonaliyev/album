@@ -6,15 +6,18 @@
     "authors": [
         {
             "name": "Azizbek Eshonaliyev",
-            "email": "1996azizbekeshonaliyev@gmail.com"
+            "email": "1996azizbekeshonaliyev@gmail.com",
+            "homepage": "https://gitlab.com/azizbekeshonaliyev",
+            "role": "Developer"
         },
         {
             "name": "Shaxzodbek Qambaraliyev",
-            "email": "shaxzodbek.qambaraliyev@gmail.com"
+            "email": "shaxzodbek.qambaraliyev@gmail.com",
+            "role": "Manager"
         }
     ],
     "require": {
-        "intervention/image": "2.*"
+        "intervention/image": "^2.4"
     },
     "autoload": {
         "psr-4": {
@@ -28,4 +31,4 @@
             ]
         }
     }
-},
+}
