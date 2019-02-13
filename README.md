@@ -43,7 +43,8 @@ $ composer require bek96/album
 
 Albumning asosiy rasmini olish.
 
-    $user->album->image->path
+       $user->album->image->path
+
 Album asosiy rasmini o'zgartirish
        
        $file   = $request->image;
@@ -69,8 +70,11 @@ Albumdagi barcha rasmlarni olish.
         -   sm() : hasOne Image|null
         -   xs() : hasOne Image|null
 Albumga yangi rasm qo'shish.
+
     $file   =   $request->image;
     $user->album->addImage($file);      
+
 Albumdan rasm olib tashlash.
+
     $user->album->removeImage($id) 
-   $id o'chirilishi kerak bo'lgan image id si     
+    $id o'chirilishi kerak bo'lgan image id si     

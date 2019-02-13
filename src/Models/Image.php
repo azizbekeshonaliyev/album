@@ -69,6 +69,7 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $file->move($path, $name);
         $image->path = $folder . $name;
         $image->album_id = ($album) ? $album->id : null;
+
         if ($image->save())
             return $image;
         else
