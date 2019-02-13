@@ -15,17 +15,22 @@ use Illuminate\Database\Eloquent\Relations\MorphOne;
 
 trait HasAlbum
 {
-    public function album(): MorphOne
+    /**
+     * @return mixed
+     */
+    public function album()
+    {
+        if (!$this->getAlbum()->exists())
+                $this->getAlbum()->create();
+
+        return $this->getAlbum();
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAlbum():MorphOne
     {
         return $this->morphOne(Album::class, 'albumable');
     }
-
-    public function createAlbum()
-    {
-        if (!$this->album)
-            return $this->album()->create();
-
-        return $this->album;
-    }
-
 }

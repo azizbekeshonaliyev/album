@@ -14,8 +14,14 @@ use Intervention\Image\Facades\Image as Picture;
 class Image extends \Illuminate\Database\Eloquent\Model
 {
 
+    /**
+     * @var string
+     */
     protected $table = 'images';
 
+    /**
+     *
+     */
     const IMAGE_RESOURCE = "bek96/album/images/";
 
     /**
@@ -28,6 +34,12 @@ class Image extends \Illuminate\Database\Eloquent\Model
         'album_id',
     ];
 
+    /**
+     * @param bool $file
+     * @param null $id
+     * @param null $album
+     * @return Image|null
+     */
     static public function store($file = false, $id = null, $album = null){
         /** @var TYPE_NAME $file */
 
@@ -93,6 +105,10 @@ class Image extends \Illuminate\Database\Eloquent\Model
         }
     }
 
+    /**
+     * @return bool
+     * @throws \Exception
+     */
     public function delete_all_size(){
 
         $images = $this->all_size;
