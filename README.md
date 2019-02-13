@@ -41,16 +41,15 @@ $ composer require bek96/album
         ];
     }
 
-# Albumning asosiy rasmini olish.
+Albumning asosiy rasmini olish.
 
     $user->album->image->path
-
-# Album asosiy rasmini o'zgartirish
+Album asosiy rasmini o'zgartirish
        
        $file   = $request->image;
        $user->album->setImageAsCover($file);
        
-# Asosiy rasmning quyidagi o'lchamlarini xam olish mumkin.
+Asosiy rasmning quyidagi o'lchamlarini xam olish mumkin.
 
     $user->album->image->xl->path   1920xauto yoki autox1920    
     $user->album->image->lg->path   1024xauto yoki autox1024
@@ -58,7 +57,7 @@ $ composer require bek96/album
     $user->album->image->sm->path   256xauto yoki autox256
     $user->album->image->xs->path   128xauto yoki autox128
 
-# Albumdagi barcha rasmlarni olish.
+Albumdagi barcha rasmlarni olish.
     
     $user->album->images Rasmlar listini qaytaradi.
     
@@ -69,9 +68,9 @@ $ composer require bek96/album
         -   md() : hasOne Image|null
         -   sm() : hasOne Image|null
         -   xs() : hasOne Image|null
-# Albumga yangi rasm qo'shish.
+Albumga yangi rasm qo'shish.
     $file   =   $request->image;
     $user->album->addImage($file);      
-# Albumdan rasm olib tashlash.
+Albumdan rasm olib tashlash.
     $user->album->removeImage($id) 
    $id o'chirilishi kerak bo'lgan image id si     
