@@ -8,6 +8,10 @@ Composer yordamida o'rnatish.
 $ composer require bek96/album
 ```
 
+Konfiguratsiya fayylarini ko'chirish uchun ushbu commandani ishga tushiring.
+
+    php artisan vendor:publish --provider="Bek96\Album\AlbumServiceProvider"
+
 ## Foydalanish.
    
     <?php
