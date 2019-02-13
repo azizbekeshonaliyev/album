@@ -1,4 +1,4 @@
-# Laravel Frameworkda tuzilayotgan web site uchun Yordamchi Album packagi.
+# Album
 
 ## Installation
 

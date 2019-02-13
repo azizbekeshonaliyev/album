@@ -1,11 +1,16 @@
 {
     "name": "bek96/album",
     "description": "Laravelda tuzilgan web saytlar uchun Album obekti.",
+    "homepage": "https://gitlab.com/azizbekeshonaliyev",
     "license": "MIT",
     "authors": [
         {
-            "name": "azizbekeshonaliyev",
+            "name": "Azizbek Eshonaliyev",
             "email": "1996azizbekeshonaliyev@gmail.com"
+        },
+        {
+            "name": "Shaxzodbek Qambaraliyev",
+            "email": "shaxzodbek.qambaraliyev@gmail.com"
         }
     ],
     "minimum-stability": "dev",
