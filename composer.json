@@ -16,5 +16,17 @@
     "minimum-stability": "dev",
     "require": {
         "bek96/album": "1.0.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bek96\\Album\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bek96\\Album\\AlbumServiceProvider"
+            ]
+        }
     }
 }
