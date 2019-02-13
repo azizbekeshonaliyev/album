@@ -13,7 +13,7 @@
             "email": "shaxzodbek.qambaraliyev@gmail.com"
         }
     ],
-    "require-dev": {
+    "require": {
         "intervention/image": "2.*"
     },
     "autoload": {
@@ -28,4 +28,4 @@
             ]
         }
     }
-}
+},
