@@ -9,7 +9,7 @@
 namespace Bek96\Album;
 
 use Illuminate\Support\ServiceProvider;
-
+use Intervention\Image\ImageServiceProvider;
 
 class AlbumServiceProvider extends ServiceProvider
 {
@@ -30,7 +30,7 @@ class AlbumServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        $this->app->register(ImageServiceProvider::class);
     }
 
     public function publishFiles(){
