@@ -1,6 +1,6 @@
 # Album
 
-## Installation
+## O'rnatish
 
 Composer yordamida o'rnatish.
 
@@ -20,7 +20,7 @@ $ composer require bek96/album
     
     class User extends Authenticatable
     {
-        use Notifiable,HasAlbum;
+        use HasAlbum;
     
         /**
          * The attributes that are mass assignable.
@@ -69,6 +69,7 @@ Albumdagi barcha rasmlarni olish.
         -   md() : hasOne Image|null
         -   sm() : hasOne Image|null
         -   xs() : hasOne Image|null
+        
 Albumga yangi rasm qo'shish.
 
     $file   =   $request->image;
@@ -77,4 +78,5 @@ Albumga yangi rasm qo'shish.
 Albumdan rasm olib tashlash.
 
     $user->album->removeImage($id) 
-    $id o'chirilishi kerak bo'lgan image id si     
+    
+$id o'chirilishi kerak bo'lgan image id si     
