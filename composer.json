@@ -13,6 +13,9 @@
             "email": "shaxzodbek.qambaraliyev@gmail.com"
         }
     ],
+    "require-dev": {
+        "intervention/image": "2.*"
+    },
     "minimum-stability": "dev",
     "require": {
         "bek96/album": "1.0.1"
