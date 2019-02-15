@@ -1,8 +1,8 @@
 # Album
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/azizbekeshonaliyev/album.svg?style=flat-square)](https://packagist.org/packages/azizbekeshonaliyev/album)
-[![Build Status](https://img.shields.io/travis/azizbekeshonaliyev/album/master.svg?style=flat-square)](https://travis-ci.org/azizbekeshonaliyev/album)
-[![Quality Score](https://img.shields.io/scrutinizer/g/azizbekeshonaliyev/album.svg?style=flat-square)](https://scrutinizer-ci.com/g/azizbekeshonaliyev/album)
-[![Total Downloads](https://img.shields.io/packagist/dt/azizbekeshonaliyev/album.svg?style=flat-square)](https://packagist.org/packages/azizbekeshonaliyev/album)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/azizbekeshonaliyev/album.svg?style=flat-square)](https://packagist.org/packages/bek96/album)
+[![Build Status](https://img.shields.io/travis/azizbekeshonaliyev/album/master.svg?style=flat-square)](https://travis-ci.org/bek96/album)
+[![Quality Score](https://img.shields.io/scrutinizer/g/azizbekeshonaliyev/album.svg?style=flat-square)](https://scrutinizer-ci.com/g/bek96/album)
+[![Total Downloads](https://img.shields.io/packagist/dt/azizbekeshonaliyev/album.svg?style=flat-square)](https://packagist.org/packages/bek96/album)
 
 ## O'rnatish
 
