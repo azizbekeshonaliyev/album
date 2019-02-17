@@ -53,13 +53,12 @@ class Image extends \Illuminate\Database\Eloquent\Model
 
         $image = Image::find($id);
 
-        if(is_null($image)){
-            $image = new Image();
-        }
-        else{
-            $image->delete_all_size();
+        if(!is_null($image)){
             $image->delete_file($image->path);
+            $image->delete_all_size();
         }
+
+        $image = new Image();
 
         if(!file_exists(self::IMAGE_RESOURCE))
         {
@@ -183,7 +182,9 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $size_type = 'xs';
         $folder = 'xs';
         $this->create_image($width, $size_type, $folder);
-        return $this->hasOne(Image::class,'image_id')->whereType($size_type);
+        return $this->hasOne(Image::class,'image_id')->whereType($size_type)->withDefault([
+            'path' => config('album.album_assets_path') . '\\images\\default.jpg'
+        ]);
     }
 
     /**
@@ -194,7 +195,9 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $size_type = 'sm';
         $folder = 'sm';
         $this->create_image($width, $size_type, $folder);
-        return $this->hasOne(Image::class,'image_id')->whereType($size_type);
+        return $this->hasOne(Image::class,'image_id')->whereType($size_type)->withDefault([
+            'path' => config('album.album_assets_path') . '\\images\\default.jpg'
+        ]);
     }
 
     /**
@@ -205,7 +208,9 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $size_type = 'md';
         $folder = 'md';
         $this->create_image($width, $size_type, $folder);
-        return $this->hasOne(Image::class,'image_id')->whereType($size_type);
+        return $this->hasOne(Image::class,'image_id')->whereType($size_type)->withDefault([
+            'path' => config('album.album_assets_path') . '\\images\\default.jpg'
+        ]);
     }
 
     /**
@@ -216,7 +221,9 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $size_type = 'lg';
         $folder = 'lg';
         $this->create_image($width, $size_type, $folder);
-        return $this->hasOne(Image::class,'image_id')->whereType($size_type);
+        return $this->hasOne(Image::class,'image_id')->whereType($size_type)->withDefault([
+            'path' => config('album.album_assets_path') . '\\images\\default.jpg'
+        ]);
     }
 
     /**
@@ -227,7 +234,9 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $size_type = 'xl';
         $folder = 'xl';
         $this->create_image($width, $size_type, $folder);
-        return $this->hasOne(Image::class,'image_id')->whereType($size_type);
+        return $this->hasOne(Image::class,'image_id')->whereType($size_type)->withDefault([
+            'path' => config('album.album_assets_path') . '\\images\\default.jpg'
+        ]);
     }
 
     /**

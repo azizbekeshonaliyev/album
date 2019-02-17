@@ -30,13 +30,23 @@ class AlbumServiceProvider extends ServiceProvider
      */
     public function register()
     {
+
+
+        $this->loadMigrationsFrom(__DIR__.'/database/migrations');
+
         $this->app->register(ImageServiceProvider::class);
     }
 
     public function publishFiles(){
+
         $this->publishes([
-            __DIR__ . '/database/migrations' => database_path('migrations/'),
-        ],'bek96/album db');
+            __DIR__ . '/config/config.php' => config_path('/album.php'),
+        ],'bek96/album config');
+
+//        $this->publishes([
+//            __DIR__ . '/database/migrations' => database_path('migrations/'),
+//        ],'bek96/album db');
+
         $this->publishes([
             __DIR__ . '/default/' => public_path('/vendor/bek96/album/images'),
         ],'bek96/album default image');
