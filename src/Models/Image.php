@@ -139,7 +139,7 @@ class Image extends \Illuminate\Database\Eloquent\Model
         $storagePath = public_path() . '/'  . $this->path;
 
         try{ $img = Picture::make($storagePath); }
-        catch(\Intervention\Image\Exception\NotReadableException  $e){ dd('Rasm ochishda muammo'); }
+        catch(\Intervention\Image\Exception\NotReadableException  $e){ return; }
 
         $old_height = $img->height();
         $old_width  = $img->width();
