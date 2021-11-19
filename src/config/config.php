@@ -9,6 +9,7 @@ return [
 
     'album_assets_path' => '/vendor/bek96/album',
 
+    'responsive_width' => 100
 ];
 
 ?>
