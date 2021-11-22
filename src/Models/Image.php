@@ -249,10 +249,10 @@ class Image extends \Illuminate\Database\Eloquent\Model
     /**
      * @return mixed
      */
-    public function responsive(){
-        $width = config('album.responsive_width',100);
-        $size_type = 'responsive';
-        $folder = 'responsive';
+    public function sp(){
+        $width = config('album.special_width',64);
+        $size_type = 'sp';
+        $folder = 'sp';
         $this->create_image($width, $size_type, $folder);
         return $this->hasOne(Image::class,'image_id')->whereType($size_type)->withDefault([
             'path' => config('album.album_assets_path') . '\\images\\default.jpg'
