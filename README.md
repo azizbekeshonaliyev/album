@@ -68,7 +68,7 @@ Asosiy rasmning quyidagi o'lchamlarini xam olish mumkin.
     $user->album->image->md->path   512xauto yoki autox512
     $user->album->image->sm->path   256xauto yoki autox256
     $user->album->image->xs->path   128xauto yoki autox128
-    $user->album->image->sp->path   config fayldan o'qiydi xauto yoki autox64
+    $user->album->image->sp->path   config fayldan o'qiydi x auto yoki autox64
 
 Albumdagi barcha rasmlarni olish.
     
